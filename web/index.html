@@ -4,70 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия звукозаписи</title>
+    <link rel="stylesheet" href="scr/css/main.css">
 </head>
 <body>
+    <!--шапка-->
     <header>
-        <img src="scr/img/logo.png" alt="Логотип" width="100">
-        <nav>
-            <ul>
-                <li><a href="#">Оборудование</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Цены и услуги</a></li>
-            </ul>
-        </nav>
-        <button>Личный кабинет</button>
+        <img src="scr/img/logo.png" alt="Логотип" width="100" class="logo">
+        <div class="panel">
+            <nav class="list">
+                <ul>
+                    <li><a href="#">оборудование</a></li>
+                    <li><a href="#">клиенты</a></li>
+                    <li><a href="#">цены и услуги</a></li>
+                </ul>
+            </nav>
+            <button>личный кабинет</button>
+        </div>
     </header>
 
     <!--титульная страница-->
     <main>
-        <section>
-            <h1>Студия звукозаписи</h1>
-            <h4>Профессиональная студия аудио продакшна, которая предоставляет полный цикл производства. Работаем в индустрии звукозаписи более 5 лет. Делаем недорого и с гарантией качества.</h4>
-            <br>
-            <button>Оставить заявку</button>
-            <br>
-            <img src="scr/img/photo.jpeg" alt="Фото студии" width="100%">
+        <section class="title">
+            <h1>СТУДИЯ ЗВУКОЗАПИСИ</h1>
+            <p>Работаем в индустрии звукозаписи более 5 лет.</p>
+            <p>Делаем недорого и с гарантией качества.</p>
+            <button>оставить заявку</button>
         </section>
 
     <!--фото студии-->
-        <section>
+        <section class="photo_studio">
             <h2>НАША СТУДИЯ</h2>
-
-            <button>влево</button>
-            <button>вправо</button>
-
-            <img src="scr/img/photo2.jpg" alt="Фото студии2" width="500"> 
-            
-            <p>■ ■ ■</p>
+            <div class= "photography">
+                <button>◀</button>
+                <img src="scr/img/photo2.jpg" alt="Фото студии2" width="500"> 
+                <button>▶</button>
+            </div>
+            <div class="square">
+              <span>■</span>
+              <span>■</span>
+              <span>■</span>
+            </div>
         </section>
 
     <!--оборудование-->
-        <section>
+        <section class="hardware">
             <h2>ОБОРУДОВАНИЕ</h2>
-            
-            <details>
-                <summary>Звуковые карты</summary>
-            </details>
-            <br>
-            <details>
-                <summary>Инструменты</summary>
-            </details>
-            <br>
-            <details>
-                <summary>Микрофоны</summary>
-            </details>
-            <br>
-            <details>
-                <summary>Усилители</summary>
-            </details>
-            <br>
-            <details>
-                <summary>Микшеры</summary>
-            </details>
-            <br>
-            <details>
-                <summary>Контроль</summary>
-            </details>
+            <div class="drop_list">
+                <hr>
+                <details>
+                    <summary>Звуковые карты</summary>
+                </details>
+                <hr>
+                <details>
+                    <summary>Инструменты</summary>
+                </details>
+                <hr>
+                <details>
+                    <summary>Микрофоны</summary>
+                </details>
+                <hr>
+                <details>
+                    <summary>Усилители</summary>
+                </details>
+                <hr>
+                <details>
+                    <summary>Микшеры</summary>
+                </details>
+                <hr>
+                <details>
+                    <summary>Контроль</summary>
+                </details>
+                <hr>
+            </div>
         </section>
 
     <!--клиенты-->
