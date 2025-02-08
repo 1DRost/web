@@ -96,6 +96,7 @@ main{
     color: #F2E29F;
     font-size: 48px;
     margin-top: 290px;
+    margin-bottom: 0px;
 }
 
 .photography{
@@ -104,12 +105,12 @@ main{
 }
 
 .photography img{
-    margin-top: 84px;
+    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 60px;
-    width: 1213px;
-    height: 695px;
+    margin-bottom: 40px;
+    width: 1280px;
+    height: 720px;
 }
 
 .photography button{
@@ -119,17 +120,6 @@ main{
     width: 48px;
     border: none;
     font-size: 40px;
-}
-
-.square { 
-    display: flex;
-    align-items: center;
-}
-
-.square span{
-    color: #F2E29F;
-    font-size: 40px;
-    margin-right: 10px;
 }
 
 .hardware{
@@ -147,4 +137,90 @@ main{
 .drop_list{
     color: #F2E29F;
     font-size: 40px;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.client h2{
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 220px;
+    margin-bottom: 0px;
+}
+
+.panel_artist{
+    display: flex;
+    align-items: center;
+}
+
+.panel_artist img{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 620px;
+    height: 550px;
+}
+
+.artist_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.artist_name{
+    background-color: #A69658;
+    width: 620px;
+    height: 140px;
+    margin-bottom: 40px;
+}
+
+.artist_name p{
+    color: #F2E29F;
+    font-size: 48px;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price h2{
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.price_row_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price_row_2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price_row_3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback{
+    display: flex;
+    align-items:end;
+    flex-direction: column;
+}
+
+.feedback h2{
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 0px;
 }
