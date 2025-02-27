@@ -197,9 +197,10 @@ main{
     margin-bottom: 40px;
 }
 
-.price_row_1{
+.price_row_1 div{
     display: flex;
     color: #A69658;
+    justify-content: space-evenly;
 }
 
 .price_row_2{
