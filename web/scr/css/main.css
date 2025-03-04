@@ -165,6 +165,15 @@ main{
     height: 600px;
 }
 
+.panel_artist button{
+    background-color: transparent;
+    color: #F2E29F;
+    height: 24px;
+    width: 48px;
+    border: none;
+    font-size: 40px;
+}
+
 .artist_card{
     display: flex;
     align-items: center;
@@ -197,20 +206,29 @@ main{
     margin-bottom: 40px;
 }
 
-.price_row_1 div{
-    display: flex;
-    color: #A69658;
-    justify-content: space-evenly;
+.price_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 91px;
 }
 
-.price_row_2{
-    display: flex;
-    color: #A69658;
+.price_card div div h3{
+    font-size: 40px;
+    position: relative;
+    left: 37px;
+    bottom: 137px;
+    width: 100%;
+    color: #F2E29F;
 }
 
-.price_row_3{
-    display: flex;
-    color: #A69658;
+.price_card div div h3::after{
+    content: " ";
+    background: #F2E29F;
+    width: 366px;
+    height: 2px;
+    top: 60px;
+    right: 80px;
+    position: absolute;
 }
 
 .feedback{
@@ -281,6 +299,12 @@ main{
     height: 75px;
     margin-right: 25px;
 }
+
+.social_network button img{
+    width: 75px;
+    height: 75px;
+}
+
 
 footer{
     display: flex;
