@@ -294,17 +294,18 @@ main{
     margin-top: 92px;
 }
 
-.social_network button{
-    width: 75px;
-    height: 75px;
-    margin-right: 25px;
+.social_network a{
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
 }
 
-.social_network button img{
-    width: 75px;
-    height: 75px;
+.social_network a img{
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
-
 
 footer{
     display: flex;
