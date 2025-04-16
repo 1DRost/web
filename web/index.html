@@ -15,13 +15,41 @@
         <div class="panel">
             <nav class="list">
                 <ul>
-                    <li><a href="#">оборудование</a></li>
-                    <li><a href="#">клиенты</a></li>
-                    <li><a href="#">цены и услуги</a></li>
+                    <li><a href="#equipment">оборудование</a></li>
+                    <li><a href="#client">клиенты</a></li>
+                    <li><a href="#price">цены и услуги</a></li>
                 </ul>
             </nav>
-            <button>личный кабинет</button>
+            <button
+                type="button"
+                onclick="registration.showModal()"
+            >
+                личный кабинет
+            </button>
         </div>
+
+        <dialog id="registration" class="registration">
+            <form id="form">
+                <button type="submit" class="close">
+                    ×
+                </button>
+                <h2>Регистрация</h2>
+                <div class="input_reg">
+                    <p>Ваше имя</p>
+                    <input type="text">
+                    <p>Ваш номер телефона</p>
+                    <input type="text">
+                    <p>Пароль</p>
+                    <input type="text">
+                    <p>Подтвердите пароль</p>
+                    <input type="text">
+                </div>
+                <button class="register">
+                    ЗАРЕГЕСТРИРОВАТЬСЯ
+                </button>
+            </form>
+        </dialog>
+
     </header>
 
     <!--титульная страница-->
@@ -30,8 +58,33 @@
             <h1>СТУДИЯ ЗВУКОЗАПИСИ</h1>
             <p>Работаем в индустрии звукозаписи более 5 лет.</p>
             <p>Делаем недорого и с гарантией качества.</p>
-            <button>оставить заявку</button>
+            <button
+                type="button"
+                onclick="bid.showModal()"
+            >
+                оставить заявку
+            </button>
         </section>
+
+        <dialog id="bid" class="bid">
+            <form id="form_bid">
+                <button type="submit" class="close_bid">
+                    ×
+                </button>
+                <h2>Оставить заявку</h2>
+                <div class="input_bid">
+                    <p>Ваше имя</p>
+                    <input type="text">
+                    <p>Ваш номер телефона</p>
+                    <input type="text">
+                    <p>Email</p>
+                    <input type="text">
+                </div>
+                <button class="make_bid">
+                    ОСТАВИТЬ ЗАЯВКУ
+                </button>
+            </form>
+        </dialog>
 
     <!--фото студии-->
         <section class="photo_studio">
@@ -46,7 +99,7 @@
         </section>
 
     <!--оборудование-->
-        <section class="hardware">
+        <section class="hardware" id="equipment">
             <h2>ОБОРУДОВАНИЕ</h2>
             <div class="drop_list">
                 <details>
@@ -72,7 +125,7 @@
 
     <!--клиенты-->
         <section class="client">
-            <h2>НАШИ КЛИЕНТЫ</h2>
+            <h2 id="client">НАШИ КЛИЕНТЫ</h2>
             <div class="panel_artist">
                 <button>◀</button>
                 <div class="artist_card">
@@ -90,7 +143,7 @@
         </section>
 
     <!--цены-->
-        <section class="price">
+        <section class="price" id="price">
             <h2>ЦЕНЫ НА УСЛУГИ</h2> 
             <div class="price_card">
                 <div class="price_row_1">
@@ -147,12 +200,54 @@
                         <h3>МАСТЕРИНГ</h3>
                     </div>
                     <div>
-                        <img src="scr/img/certificate.jpg" alt="Сертификат">  
+                        <img 
+                        src="scr/img/certificate.jpg" 
+                        alt="Сертификат"
+                        type="button"
+                        onclick="certificate.showModal()"
+                        >  
                         <h3>СЕРТИФИКАТ</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+        <dialog id="certificate" class="certificate">
+            <form id="form_certificate">
+                <button type="submit" class="close_certificate">
+                    ×
+                </button>
+                <h2>Сертификат</h2>
+                <div class="certificate_card">
+                    <div class="card_vert"></div>
+                    <div class="card_hor"></div>
+                    <div class="studio">STUDIO</div>
+                    <div class="electronic-cert">электронный сертификат</div>
+                </div>
+            
+                <div class="nominal">
+                    <p>Номинал:</p>
+                    <div class="nominal_buttons">
+                        <button>5 000</button>
+                        <button>10 000</button>
+                        <button>15 000</button>
+                        <button>20 000</button>
+                    </div>
+                </div>
+            
+                <div class="quantity">
+                    <p>Количество:</p>
+                    <div class="quantity-box">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <button class="make_certificate">
+                    ДАЛЕЕ
+                </button>
+            </form>
+        </dialog>
 
     <!--обратная связь-->
 

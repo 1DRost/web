@@ -51,7 +51,7 @@ header{
 }
 
 main{
-    background-image: url('../img/photo.jpg');
+    background-image: url('../img/podcast_main.jpg');
     background-repeat: no-repeat;
     background-position: top;
     margin: 0;
@@ -138,7 +138,7 @@ main{
     font-size: 48px;
     font-style: bold;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
 }
@@ -150,10 +150,8 @@ main{
 
 .services_icon div{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-left: 60px;
-    margin-right: 60px;
 }
 
 .services_icon div p{
@@ -163,21 +161,10 @@ main{
 
 .services_icon div img{
     background-color:#1E1F23;
-}
-
-.guitar{
-    height: 323;
-    width: 323;
-}
-
-.promotion{
-    height: 502;
-    width: 502;
-}
-
-.turn{
-    height: 230;
-    width: 164;
+    width: 250px;
+    height: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .text_vox{

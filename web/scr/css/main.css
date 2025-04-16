@@ -50,6 +50,91 @@ header{
     stroke: none;
 }
 
+.registration{
+    background-color:#1E1F23;
+    border: none;
+}
+
+.registration form h2{
+    text-align: center;
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.registration form button{
+    border: none;
+}
+
+.close{
+    background: none;
+    color: #F2E29F;
+    font-size: 64px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    opacity: 0.7;
+    height: 35px;
+    width: 35px;
+}
+
+.registration form button:hover{
+    opacity: 1;
+}
+
+.input_reg{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.input_reg p{
+    color: #F2E29F;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input_reg input{
+    width: 600px;
+    height: 60px;
+    background-color: #1E1F23;
+    font-size: 32px;
+    border-color:#D9B26F;
+    color: #F2E29F;
+    margin-bottom: 40px;
+}
+
+.register{
+    width: 606px;
+    height: 60px;
+    font-size: 32px;
+    color: #1E1F23;
+    background: #F2E29F;
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+dialog,
+dialog::backdrop {
+    opacity: 0;
+    scale: 1.05;
+    transition-duration: 0.2s;
+    transition-behavior: allow-discrete;
+}
+
+dialog[open],
+dialog[open]::backdrop{
+    opacity: 1;
+    scale: 1;
+
+    @starting-style{
+        opacity: 0;
+        scale: 1.05;
+    }
+}
+
 main{
     background-image: url('../img/photo.jpg');
     background-repeat: no-repeat;
@@ -84,6 +169,72 @@ main{
     height: 100px;
     width: 800px;
     margin-top: 120px;
+}
+
+.bid{
+    background-color:#1E1F23;
+    border: none;
+}
+
+.bid form h2{
+    text-align: center;
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.bid form button{
+    border: none;
+}
+
+.close_bid{
+    background: none;
+    color: #F2E29F;
+    font-size: 64px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    opacity: 0.7;
+    height: 35px;
+    width: 35px;
+}
+
+.bid form button:hover{
+    opacity: 1;
+}
+
+.input_bid{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.input_bid p{
+    color: #F2E29F;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input_bid input{
+    width: 600px;
+    height: 60px;
+    background-color: #1E1F23;
+    font-size: 32px;
+    border-color:#D9B26F;
+    color: #F2E29F;
+    margin-bottom: 40px;
+}
+
+.make_bid{
+    width: 606px;
+    height: 60px;
+    font-size: 32px;
+    color: #1E1F23;
+    background: #F2E29F;
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 40px;
 }
 
 .photo_studio{
@@ -229,6 +380,141 @@ main{
     top: 60px;
     right: 80px;
     position: absolute;
+}
+
+.certificate{
+    background-color:#1E1F23;
+    border: none;
+}
+
+.certificate form h2{
+    text-align: center;
+    color: #F2E29F;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.close_certificate{
+    background: none;
+    border: none;
+    color: #F2E29F;
+    font-size: 64px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    height: 35px;
+    width: 35px;
+}
+
+.certificate_card {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-color: #848FA5;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card_vert{
+    width: 30px;
+    height: 300px;
+    position: absolute;
+    right: 70px;
+    background-color: #D9B26F;
+}
+
+.card_hor{
+    width: 500px;
+    height: 30px;
+    position: absolute;
+    top: 70px;
+    background-color: #D9B26F;
+}
+
+.studio {
+    color: #F2E29F;
+    position: absolute;
+    font-size: 36px;
+    top: 10px;
+    left: 20px;
+    font-weight: bold;
+}
+
+.electronic-cert {
+    color: #F2E29F;
+    position: absolute;
+    font-size: 18px;
+    bottom: 10px;
+    left: 20px;
+}
+
+.nominal {
+    color: #F2E29F;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nominal p{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.nominal_buttons button{
+    color: #F2E29F;
+    background: #1E1F23;
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+    border: 1px solid #F2E29F;
+}
+
+.quantity {
+    color: #F2E29F;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.quantity p{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.quantity-box {
+    color: #F2E29F;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #F2E29F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quantity button{
+    color: #F2E29F;
+    background: #1E1F23;
+    border: none;
+    font-size: 24px;
+}
+
+.quantity span{
+    font-size: 24px;
+}
+
+.make_certificate{
+    width: 500px;
+    height: 60px;
+    font-size: 32px;
+    color: #1E1F23;
+    background: #F2E29F;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .feedback{
