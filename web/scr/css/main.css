@@ -521,9 +521,7 @@ main{
     display: flex;
 }
 
-.feedback img{
-    width: 968;
-    height: 625;
+.map{
     margin-top: 238px;
     margin-left: 200px;
     margin-right: 90px;
@@ -577,7 +575,7 @@ main{
 
 .social_network{
     display: flex;
-    margin-top: 92px;
+    margin-top: 50px;
 }
 
 .social_network a{
